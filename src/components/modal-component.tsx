@@ -8,11 +8,12 @@ interface Props{
 }
 
 export default class ModalComponent extends React.Component<Props>{
-
     render(){
         return(
+            // O onHide chama o atributo handleOpenCloseModal
+            //Editar modal importado pelo react bootstrap 
             <div>
-                <Modal show={this.props.showModal} onHide={this.props.handleOpenCloseModal}>
+                <Modal show={this.props.showModal} onHide={this.props.handleOpenCloseModal}> 
                     <Modal.Header closeButton>
                     <Modal.Title>Bem-vindo</Modal.Title>
                     </Modal.Header>

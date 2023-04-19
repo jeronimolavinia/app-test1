@@ -30,8 +30,11 @@ export default class App extends React.Component<Props,State>{
             <div> 
                 <ButtonComponent showModal={this.state.showModal} handleOpenCloseModal={()=> this.handleOpenCloseModal()}/>         
             </div>
-    // O simbolo ()=> aponta diretamente para função com intuito de evitar conflito com os atributos do Props do Button Component e ModalComponent
-
+                    /*
+                    O simbolo ()=> é uma "Array Function" 
+                    que aponta diretamente para função com intuito de evitar conflito 
+                    com os atributos do Props do Button Component e ModalComponent
+                    */
         )
 
     }
